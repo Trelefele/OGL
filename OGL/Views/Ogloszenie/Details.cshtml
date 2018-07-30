@@ -1,0 +1,51 @@
+﻿@model Repozytorium.Models.Ogloszenie
+
+@{
+    ViewBag.Title = "Szczegóły ogłoszenia nr" + Model.Id;
+    ViewBag.Opis = "Szczegóły ogłoszenia nr" + Model.Id + " Opis do Google";
+    ViewBag.SlowaKluczowe = "Ogłoszenie, " + Model.Id + ",szczegóły";
+}
+
+<h2>Szczegóły ogłoszenia nr @Model.Id</h2>
+
+<div>
+    <h4>Ogloszenie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Id autora:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UzytkownikId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tresc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tresc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tytul)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tytul)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDodania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDodania)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary"}) 
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-warning" })
+</p>
