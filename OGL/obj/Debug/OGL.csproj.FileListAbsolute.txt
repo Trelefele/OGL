@@ -131,3 +131,7 @@ C:\Users\Gienek\Desktop\OGL\OGL\bin\Unity.Abstractions.dll
 C:\Users\Gienek\Desktop\OGL\OGL\bin\Unity.Container.dll
 C:\Users\Gienek\Desktop\OGL\OGL\bin\Unity.Mvc.dll
 C:\Users\Gienek\Desktop\OGL\OGL\bin\WebActivatorEx.dll
+C:\Users\Gienek\Desktop\OGL\OGL\bin\PagedList.dll
+C:\Users\Gienek\Desktop\OGL\OGL\bin\PagedList.Mvc.dll
+C:\Users\Gienek\Desktop\OGL\OGL\bin\PagedList.xml
+C:\Users\Gienek\Desktop\OGL\OGL\bin\PagedList.Mvc.xml
