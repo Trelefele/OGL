@@ -104,25 +104,24 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IRepo\IKategoriaRepo.cs" />
     <Compile Include="IRepo\IOglContext.cs" />
     <Compile Include="IRepo\IOgloszenieRepo.cs" />
+    <Compile Include="Migrations\201807302100008_373.cs" />
+    <Compile Include="Migrations\201807302100008_373.Designer.cs">
+      <DependentUpon>201807302100008_373.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Kategoria.cs" />
-    <Compile Include="Migrations\201807281822143_startowa.cs" />
-    <Compile Include="Migrations\201807281822143_startowa.Designer.cs">
-      <DependentUpon>201807281822143_startowa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807291214336_1.cs" />
-    <Compile Include="Migrations\201807291214336_1.Designer.cs">
-      <DependentUpon>201807291214336_1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\OglContext.cs" />
     <Compile Include="Models\Ogloszenie.cs" />
     <Compile Include="Models\Ogloszenie_Kategoria.cs" />
+    <Compile Include="Models\Views\OgloszeniaZKategoriiViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\KategoriaRepo.cs" />
     <Compile Include="Repo\OgloszenieRepo.cs" />
     <Compile Include="Models\Uzytkownik.cs" />
-    <Compile Include="View\AccountViewModels.cs" />
+    <Compile Include="Models\Views\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -134,14 +133,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807281822143_startowa.resx">
-      <DependentUpon>201807281822143_startowa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807291214336_1.resx">
-      <DependentUpon>201807291214336_1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807302100008_373.resx">
+      <DependentUpon>201807302100008_373.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

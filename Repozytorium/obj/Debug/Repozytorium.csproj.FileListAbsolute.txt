@@ -76,7 +76,6 @@ C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.csproj.CoreCompi
 C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.csproj.CopyComplete
 C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.dll
 C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.pdb
-C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations.startowa.resources
-C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.cache
-C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations._1.resources
 C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.csprojAssemblyReference.cache
+C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations._373.resources
+C:\Users\Gienek\Desktop\OGL\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.cache
