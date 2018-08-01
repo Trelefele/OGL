@@ -17,7 +17,7 @@ namespace Repozytorium.Models
         [Display(Name = "ID kategorii:")]
         public int Id { get; set; }
 
-        [Display(Name = "Nazwa kategorii: Co?")]
+        [Display(Name = "Nazwa kategorii:")]
         [Required]
         public string Nazwa { get; set; }
 

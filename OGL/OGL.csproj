@@ -225,6 +225,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KategoriaController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OgloszenieController.cs" />
     <Compile Include="Global.asax.cs">
@@ -335,6 +336,13 @@
     <Content Include="Views\Ogloszenie\Details.cshtml" />
     <Content Include="Views\Ogloszenie\Edit.cshtml" />
     <Content Include="Views\Ogloszenie\Index.cshtml" />
+    <Content Include="Views\Ogloszenie\MojeOgloszenia.cshtml" />
+    <Content Include="Views\Kategoria\Create.cshtml" />
+    <Content Include="Views\Kategoria\Delete.cshtml" />
+    <Content Include="Views\Kategoria\Details.cshtml" />
+    <Content Include="Views\Kategoria\Edit.cshtml" />
+    <Content Include="Views\Kategoria\Index.cshtml" />
+    <Content Include="Views\Kategoria\PokazOgloszenia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

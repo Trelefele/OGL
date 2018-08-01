@@ -110,7 +110,7 @@ namespace OGL.Controllers
                 {
                     _repo.Dodaj(ogloszenie);
                     _repo.SaveChanges();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("MojeOgloszenia");
                 }
                 catch (Exception)
                 {
@@ -212,6 +212,17 @@ namespace OGL.Controllers
             var ogloszenia = _repo.PobierzOgloszenia();
             ogloszenia = ogloszenia.OrderByDescending(d => d.DataDodania);
             return PartialView("Index", ogloszenia.ToPagedList<Ogloszenie>(currentPage,naStronie));
+        }
+        [OutputCache(Duration = 1000)]
+        public ActionResult MojeOgloszenia(int? page)
+        {
+            int currentPage = page ?? 1;
+            int naStronie = 3;
+            string userId = User.Identity.GetUserId();
+            var ogloszenia = _repo.PobierzOgloszenia();
+            ogloszenia = ogloszenia.OrderByDescending(d => d.DataDodania)
+                .Where(o => o.UzytkownikId == userId);
+            return View(ogloszenia.ToPagedList<Ogloszenie>(currentPage, naStronie));
         }
 
         //protected override void Dispose(bool disposing)
